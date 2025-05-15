@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tropical Treats Cart</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="shop">
+    <h1>Tropical Treats</h1>
+    <div class="products">
+      <div class="product">
+        <h2>Tropical Juice</h2>
+        <button onclick="addToCart('Tropical Juice')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h2>Haribo Gummies</h2>
+        <button onclick="addToCart('Haribo Gummies')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h2>Blue Doritos</h2>
+        <button onclick="addToCart('Blue Doritos')">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cartList"></ul>
+    <form id="checkoutForm" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="hidden" name="order_summary" id="orderSummary">
+      <button type="submit">Checkout</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
